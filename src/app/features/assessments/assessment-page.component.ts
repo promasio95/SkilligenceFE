@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 
       <div class="panel">
         <h3>Skill Tests</h3>
-        <p>Assign role-specific assessments to candidates and employees.</p>
+        <p>Assgn role-specific assessments to candidates and employees.</p>
       </div>
 
       <div class="panel">
