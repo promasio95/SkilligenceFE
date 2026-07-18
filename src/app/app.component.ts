@@ -13,9 +13,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
         <a routerLink="/candidate">Candidate</a>
         <a routerLink="/recruiter">Recruiter</a>
         <a routerLink="/company">Company</a>
-        <a routerLink="/jobs">Jobs</a>
-        <a routerLink="/assessments">Assessments</a>
-        <a routerLink="/interviews">Interviews</a>
       </nav>
     </header>
 

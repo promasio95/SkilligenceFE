@@ -28,30 +28,18 @@ import { RouterLink } from '@angular/router';
         </div>
       </div>
 
-      <div class="cards">
-        <a class="card" routerLink="/candidate">
+      <div class="cards cards-actors">
+        <a class="card actor" routerLink="/candidate">
           <h3>Candidate</h3>
-          <p>Upload CVs, get ATS score, extract skills, and take skill tests.</p>
+          <p>Upload CVs, extract skills and take assessments.</p>
         </a>
-        <a class="card" routerLink="/recruiter">
+        <a class="card actor" routerLink="/recruiter">
           <h3>Recruiter</h3>
-          <p>Search candidate profiles and review skills, summaries, and test results.</p>
+          <p>Search profiles, review summaries and shortlist talent.</p>
         </a>
-        <a class="card" routerLink="/company">
-          <h3>Company</h3>
-          <p>Manage assessments and evaluate employee performance with confidence.</p>
-        </a>
-        <a class="card" routerLink="/jobs">
-          <h3>Jobs</h3>
-          <p>Coordinate openings, hiring stages, and talent pipelines.</p>
-        </a>
-        <a class="card" routerLink="/assessments">
-          <h3>Assessments</h3>
-          <p>Launch tests and review results with actionable insights.</p>
-        </a>
-        <a class="card" routerLink="/interviews">
-          <h3>Interviews</h3>
-          <p>Manage scheduling, feedback, and interview outcomes.</p>
+        <a class="card actor" routerLink="/company">
+          <h3>Corporate</h3>
+          <p>Manage assessments, track performance and reporting.</p>
         </a>
       </div>
     </section>
@@ -67,7 +55,9 @@ import { RouterLink } from '@angular/router';
     .stat strong { display: block; font-size: 1.2rem; color: #0f172a; }
     .stat span { color: #64748b; font-size: 0.95rem; }
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-    .card { display: block; padding: 1.2rem; border: 1px solid #e2e8f0; border-radius: 16px; text-decoration: none; color: inherit; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .cards-actors { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+    .card { display: block; padding: 1.2rem; border: 1px solid #e2e8f0; border-radius: 16px; text-decoration: none; color: inherit; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+    .card.actor { padding: 2rem; min-height: 180px; display:flex; flex-direction:column; justify-content:center; text-align:center; }
     .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1); }`
   ]
 })
